@@ -13,6 +13,7 @@ try {
     die("Ошибка подключения к БД: " . $e->getMessage());
 }
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    echo "<p style='color:green;'>Ваши данные отправлены!</p>";
     $errors = [];
     if (!empty($errors)) {
         echo "<h2>Ошибки:</h2><ul>";
